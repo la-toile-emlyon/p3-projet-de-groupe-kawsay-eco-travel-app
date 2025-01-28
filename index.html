@@ -11,21 +11,28 @@
 
   <body>
     <!-- Début HTML -->
-    <nav id="menu">
-      <div id="logo" >
-        <a href="#"><img src="" alt="">
+    <div class="navigation">
+      <div class="logo">
+        <a href="/">
+          <img src="https://img.icons8.com/?size=100&id=102202&format=png&color=000000" alt="logo kawsay">
+          <h3>Kawsay</h3>
         </a>
-        <h3>Kawsay</h3>
       </div>
-      
-      <ul id="navbar">
-        <li><a href="/doc.html">Documentation</a></li>
-        <li><a class="primary-button" href="https://www.figma.com/proto/jF6ftwoPuSrSgqGMHNVhmt/Kawsay-Travel-App?page-id=4658%3A3170&node-id=4781-4422&viewport=449%2C-891%2C0.24&t=Qv0MW8VnEJ6yXUay-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=4781%3A4422&show-proto-sidebar=1">Télécharger</a></li>
-      </ul>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="doc.html">Documentation</a></li>
+          <li><a href="propos.html">À propos de nous</a></li>
+        </ul>
       </nav>
-        </div>
-    </nav>
-
+      <nav class="main-menu">
+        <ul>
+          <li><a class="primary-button" href="https://www.figma.com/proto/jF6ftwoPuSrSgqGMHNVhmt/Kawsay-Travel-App?page-id=4658%3A3170&node-id=4781-4422&viewport=449%2C-891%2C0.24&t=Qv0MW8VnEJ6yXUay-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=4781%3A4422&show-proto-sidebar=1">Télécharger</a></li>
+        </ul>
+      </nav>
+    </div>
+      
+    
     <!-- Header -->
      <header>
       <h1>Kawsay</h1>
@@ -53,17 +60,52 @@
     </section>
 
     <footer>
-      <div id="liens">
-        <ul>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Mentions légales</a></li>
-        </ul>
-      </div>
-      <div id="social">
-        <a href="">instagram<img src="" alt=""></a>
-        <a href="">Pinterest<img src="" alt=""></a>
-        <a href="">Facebook<img src="" alt=""></a>
-
+      <div class="container-footer">
+        <div class="footer-content">
+          <div class="left-column">
+            <ul class="socials">
+              <li>
+                <a href="/" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 1024 1024" class="" fill="">
+                    <path d="M256 512c0-141.386 114.614-256 256-256 141.382 0 256 114.614 256 256 0 141.382-114.618 256-256 256-141.386 0-256-114.618-256-256zM512 358.4c-84.831 0-153.6 68.769-153.6 153.6s68.769 153.6 153.6 153.6c84.831 0 153.6-68.769 153.6-153.6s-68.769-153.6-153.6-153.6z" fill=""></path><path d="M844.8 230.4c0 28.278-22.925 51.2-51.2 51.2s-51.2-22.922-51.2-51.2c0-28.278 22.925-51.2 51.2-51.2s51.2 22.922 51.2 51.2z" fill=""></path><path d="M0 256c0-141.385 114.615-256 256-256h512c141.382 0 256 114.615 256 256v512c0 141.382-114.618 256-256 256h-512c-141.385 0-256-114.618-256-256v-512zM256 102.4c-84.831 0-153.6 68.769-153.6 153.6v512c0 84.832 68.769 153.6 153.6 153.6h512c84.832 0 153.6-68.768 153.6-153.6v-512c0-84.831-68.768-153.6-153.6-153.6h-512z" fill=""></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 1024 1024" class="" fill="">
+                    <path d="M787.010 242.154c-6.102-3.152-12.035-6.607-17.787-10.353-16.733-11.060-32.069-24.091-45.688-38.814-34.069-38.984-46.797-78.532-51.483-106.221h0.193c-3.915-22.983-2.301-37.854-2.054-37.854h-155.181v600.057c0 8.053 0 16.017-0.339 23.883 0 0.982-0.094 1.885-0.151 2.939 0 0.434 0 0.885-0.094 1.337 0 0.114 0 0.223 0 0.337-1.636 21.528-8.537 42.327-20.098 60.567-11.56 18.233-27.425 33.352-46.199 44.020-19.566 11.131-41.696 16.968-64.207 16.938-72.302 0-130.899-58.952-130.899-131.765 0-72.809 58.597-131.764 130.899-131.764 13.686-0.013 27.288 2.141 40.301 6.381l0.188-158.005c-39.504-5.103-79.636-1.963-117.865 9.221s-73.727 30.169-104.252 55.758c-26.747 23.24-49.233 50.969-66.447 81.939-6.551 11.294-31.266 56.677-34.259 130.332-1.882 41.809 10.673 85.125 16.659 103.020v0.379c3.765 10.541 18.353 46.514 42.127 76.836 19.17 24.329 41.82 45.694 67.218 63.416v-0.373l0.376 0.373c75.125 51.049 158.419 47.7 158.419 47.7 14.419-0.584 62.72 0 117.572-25.998 60.838-28.817 95.473-71.752 95.473-71.752 22.124-25.654 39.719-54.892 52.031-86.456 14.041-36.912 18.727-81.185 18.727-98.882v-318.342c1.879 1.129 26.955 17.713 26.955 17.713s36.123 23.153 92.479 38.23c40.436 10.73 94.907 12.989 94.907 12.989v-154.052c-19.083 2.070-57.844-3.953-97.521-23.736z" fill=""></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 1024 1024" class="" fill=""><path d="M597.339 575.995h106.668l42.662-170.667h-149.33v-85.333c0-43.947 0-85.333 85.33-85.333h64v-143.36c-13.907-1.835-66.432-5.974-121.896-5.974-115.84 0-198.101 70.699-198.101 200.533v119.467h-128v170.667h128v362.668h170.667v-362.668z" fill=""></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 1024 1024" class="" fill="">
+                    <path d="M287.833 202.898c-0.010 21.301-8.482 41.724-23.551 56.779s-35.501 23.506-56.802 23.495c-21.3-0.011-41.724-8.482-56.778-23.551s-23.506-35.502-23.495-56.802c0.010-21.3 8.482-41.724 23.551-56.778s35.501-23.506 56.802-23.495c21.3 0.011 41.724 8.483 56.778 23.552s23.506 35.501 23.495 56.802zM290.243 342.644h-160.627v502.765h160.627v-502.765zM544.034 342.644h-159.825v502.765h158.218v-263.831c0-146.974 191.545-160.628 191.545 0v263.831h158.624v-318.445c0-247.768-283.509-238.532-350.169-116.856l1.606-67.464z" fill=""></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div id="liens">
+            <ul>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Mentions légales</a></li>
+            </ul>
+          </div>
+          <div class="download">
+            <ul>
+              <li><a href="https://apps.apple.com/app/apple-store/id6443617088?pt=125549652&ct=website_app_downloads&mt=8"></a></li>
+              <li><a href="https://play.google.com/store/apps/details?id=com.stippl.stippl&referrer=utm_source%3Dstippl%26utm_medium%3Dwebsite%26utm_campaign%3Dwebsite_app_downloads%26anid%3Dadmob"></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
 

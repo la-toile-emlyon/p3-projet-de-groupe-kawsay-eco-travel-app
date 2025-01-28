@@ -1,4 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --primary-color: #05668D;
+    --secondary-color: #028090;
+    --tertiary-color: #00A896;
+    --quaternary-color: #02C39A;
+    --contrast-color-1: #F0F3BD;
+    --contrast-color-2: #FAF3DD;
+    --subtitle1: #61646B;
+    --subtitle2: #AFB1B6;
+    --subtitle3: #F7F5FF;
+    --main-font: DM Sans, sans-serif;
+    --secondary-font: Outfit, sans-serif;
+}
+
+/* main css */
+
 html {
   height: 100%;
   width: 100%;
 }
+
+body {
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    color: #4c606b;
+    background-color: #efeff0;
+    gap: 80px;
+    height: 100%;
+    margin: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: #bebebe;
+}
+
+a:hover {
+    color: #717070;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 6rem;
+    font-weight: 600;
+    margin: 0;
+    color: #239de4;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    color: #68b52a;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+    /* Top menu */
+    .navigation {
+        display: flex;
+        width: 100%;
+        max-height: 100px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        border-radius: 0px 0px 30px 30px;
+        border-bottom: 1px solid var(--outline, #E0E0E0);
+        background: #FFF;
+        box-shadow: 0px 11px 24px -10px rgba(66, 68, 90, 1);
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
+    .logo a {
+        display: flex;
+        align-items: center;
+        width: auto;
+        gap: 1rem;
+    }
+
+    .logo img {
+        display: flex;
+        height: 3rem;
+        color: #68b52a;
+    }
+     
+    .main-menu {
+        position: relative;
+        display: flex;
+        width: auto;
+        justify-content: flex-end;
+    }
+
+    .main-menu ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .link{
+        color: gray;
+        font-weight: 400;
+        font-size: 1.2em;
+        text-decoration: none;
+    }
+     
+    .link:hover{
+        color: #68b52a;
+        font-weight: 600;
+        border-bottom: outset 2px #68b52a;
+        padding-bottom: 1.5em;
+        font-size: 1.1em;
+    }
+
+     /* Footer */
+
+     footer {
+      background-color: var(--subtitle3);
+      padding-top: 2rem;
+      margin-top: -2rem;
+      z-index: 9;
+      position: relative;
+      }
+
+     .container-footer {
+      width: 100%;
+      max-width: 1368px;
+      margin: 0 auto;
+     }
+
+     .footer-content {
+      display: grid;
+      grid-auto-flow: column;
+     }
+
+
+      footer a {
+          color: var(--subtitle1);
+          text-decoration: none;
+      }
+
+      footer li {
+          list-style: none;
+      }
+
+      footer a:hover {
+          color: var(--subtitle2);
+      }
+
+      #liens {
+          display: flex;
+          gap: 20px;
+      }
+
+      #social {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+      }
+
+      /* Boutons */
+
+      .primary-button {
+          border-radius: 2rem;
+          background-color: var(--primary-color);
+          padding: 0rem 1rem;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 2rem;
+          font-size: .875rem;
+          font-weight: 600;
+          border: 1px solid transparent;
+          transition: .1s;
+          color: var(--contrast-color-1);
+          cursor: pointer;
+      }
+
+      .primary-button:hover {
+        background-color: var(--contrast-color-2);
+        opacity: 1;
+        box-shadow: 0 0 0 2px var(--primary-color);
+        color: var(--primary-color);
+      }

@@ -1,202 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Parkinsans:wght@300..800&display=swap');
-
-
-/* main css */
-
-html, body {
-    align-items: center;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    color: #4c606b;
-    background-color: #efeff0;
-    gap: 80px;
-    height: 100%;
-    margin: 0%;
-}
-
-a {
-    text-decoration: none;
-    color: #bebebe;
-}
-
-a:hover {
-    color: #717070;
-    font-weight: 600;
-}
-
-h1{
-    font-size: 6rem;
-    font-weight: 600;
-    margin: 0;
-    color: #239de4;
-}
-
-h2{
-    font-size: 4rem;
-    font-weight: 500;
-    text-align: center;
-    color: #68b52a;
-}
-
-h3{
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-h4{
-    font-size: 1.75rem;
-    font-weight: 300;
-}
-
-p {
-    font-size: 1.3rem;
-    font-weight: 200;
-}
-
-    /* navbar */
-    #menu {
-        display: flex;
-        height: 80px;
-        width: 100%;
-        justify-content: space-between;
-        background-color: white;
-        box-shadow: 0px 11px 24px -10px rgba(66, 68, 90, 1);
-     }
-     
-    #navbar {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        list-style: none;
-        margin: 0;
-    }
-
-    .link{
-        color: gray;
-        font-weight: 400;
-        font-size: 1.2em;
-        text-decoration: none;
-    }
-     
-    .link:hover{
-        color: #68b52a;
-        font-weight: 600;
-        border-bottom: outset 2px #68b52a;
-        padding-bottom: 1.5em;
-        font-size: 1.1em;
-    }
-
-    #logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-     }
-
-     #logo img {
-        width: 4em;
-        height: auto;
-        color: #68b52a;
-     }
-     
     /* header */
-    header, .fonctionnalites {
-        display: flex;
-        flex-direction: column;
-        padding: 0 4em;
-        min-height: 100%;
-        max-width: 100%;
-        align-items: center;
-        justify-content: center;
-        background-color: #05668D;
-        color: #FAF3DD;
-    }
+header, .fonctionnalites {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4em;
+    min-height: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #05668D;
+    color: #FAF3DD;
+}
 
-    #Site-title {
-        display: flex;
-        justify-content: center;
-    }
+#Site-title {
+    display: flex;
+    justify-content: center;
+}
 
-    #Site-title h4 {
-        text-align: center;
-    }
-    
-    .header-img {
-        width: 100%;
-        max-height: 400px;
-        object-fit: cover;
-        object-position: center 70%;
-    }
+#Site-title h4 {
+    text-align: center;
+}
 
-    /* Sections */
+.header-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center 70%;
+}
 
-    .contexte, .download {
-        display: flex;
-        flex-direction: column;
-        padding: 0 4em;
-        min-height: 100%;
-        max-width: 100%;
-        align-items: center;
-        justify-content: center;
-        background-color: #F0F3BD;
-        color: #05668D;
-    }
+/* Sections */
 
-    .reviews {
-        display: flex;
-        flex-direction: column;
-        padding: 0 4em;
-        min-height: 100%;
-        max-width: 100%;
-        align-items: center;
-        justify-content: center;
-        background-color: #f5f5f5;
-    }
+.contexte, .download {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4em;
+    min-height: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F3BD;
+    color: #05668D;
+}
 
-    .reviews {
-        background-color: #f5f5f5;
-    }
+.reviews {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4em;
+    min-height: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
 
-    footer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-        padding: 2em;
-        background-color: #545554;
-        color: white;
-    }
-
-    footer a {
-        color: white;
-        text-decoration: none;
-    }
-
-    footer li {
-        list-style: none;
-    }
-
-    footer a:hover {
-        color: #68b52a;
-    }
-
-    #liens {
-        display: flex;
-        gap: 20px;
-    }
-
-    #social {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .primary-button {
-        width: 100%;
-        height: auto;
-        background-color: #68b52a;
-        text-decoration: none;
-        color: white;
-        padding: 1em;
-        
-    }
+.reviews {
+    background-color: #f5f5f5;
+}
