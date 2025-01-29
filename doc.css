@@ -11,6 +11,10 @@ header, .target {
     color: #FAF3DD;
 }
 
+.target {
+    max-height: fit-content;
+}
+
 #Site-title {
     display: flex;
     justify-content: center;
@@ -33,8 +37,9 @@ header, .target {
     display: flex;
     flex-direction: row;
     padding: 0 4em;
-    min-height: 100%;
+    height: 95%;
     max-width: 100%;
+    margin-top: 5%;
     align-items: center;
     justify-content: center;
     background-color: #F0F3BD;
@@ -46,13 +51,14 @@ header, .target {
 .text-doc {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
 }
 
 .img-doc {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
+    padding: 20% 0;
     object-fit: contain;
 }
 
@@ -93,7 +99,7 @@ header, .target {
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 2%;
+    gap: 1%;
     justify-content: center;
 }
 
@@ -101,16 +107,24 @@ header, .target {
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: 70vh;
+    height: 75vh;
     border-radius: 20px;
     background-color: #f7f5ff42;
+    padding: 0.5em;
 }
 
 .card-text {
     display: flex;
     flex-direction: column;
-    padding: 0.5em;
     gap: 0.5em;
+}
+
+.card-text h3 {
+    height: 60px;
+}
+
+.card-text p {
+    font-size: 1em;
 }
 
 .card-img {
