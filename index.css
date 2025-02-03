@@ -11,6 +11,21 @@ header, .fonctionnalites {
     color: #FAF3DD;
 }
 
+/* header {
+    background: url(assets/header-bg.png) lightgray 50% / cover no-repeat;
+} */
+
+.header-text,  {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.header-text h1 {
+    font-family: var(--secondary-font);
+}
+
 #Site-title {
     display: flex;
     justify-content: center;
@@ -29,10 +44,52 @@ header, .fonctionnalites {
 
 /* Sections */
 
-.contexte, .download {
+.chiffres {
     display: flex;
     flex-direction: column;
-    padding: 0 4em;
+    padding: 2em 4em;
+    max-width: 100%;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 10%;
+}
+
+.chiffres-container {
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    justify-content: center;
+}
+
+.chiffres-card {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    border-radius: 3%;
+    background-color: #f7f5fff6;
+    padding: 0.3em;
+    justify-content: space-between;
+}
+
+.chiffres-card h5 {
+    font-size: 4em;
+    padding: 0.5em;
+    margin: 0;
+    text-align: center;
+}
+
+.chiffres-card h6 {
+    font-size: 0.5em;
+    padding: 1em;
+    text-align: end ;
+}
+
+.impact, .download {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
     min-height: 100%;
     max-width: 100%;
     align-items: center;
@@ -41,10 +98,36 @@ header, .fonctionnalites {
     color: #05668D;
 }
 
+.main-fonctionnalite {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.impact-cards {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 1em;
+    justify-content: center;
+}
+.card-impact{
+    grid-column: span 2;
+}
+
+.card-impact img {
+    width: 192px;
+    height: 192px;
+    object-fit: cover;
+}
+
 .reviews {
     display: flex;
     flex-direction: column;
-    padding: 0 4em;
+    padding: 0 2em;
     min-height: 100%;
     max-width: 100%;
     align-items: center;
@@ -52,6 +135,32 @@ header, .fonctionnalites {
     background-color: #f5f5f5;
 }
 
-.reviews {
-    background-color: #f5f5f5;
+.reviews-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1em;
+    justify-content: center;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    border-radius: 3%;
+    background-color: #f7f5fff6;
+    padding: 0.5em;
+}
+
+.review-card img {
+    width: 200px;
+    height: auto;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.review-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }

@@ -65,19 +65,8 @@ header, .target {
 .img-doc img {
     width: 100%;
     height: auto;
+    max-height: 80vh;
     border-radius: 20px;
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    padding: 0 4em;
-    min-height: 100%;
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
-    background-color: #F0F3BD;
-    color: #05668D;
 }
 
 .evolution {
@@ -107,7 +96,6 @@ header, .target {
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: 75vh;
     border-radius: 20px;
     background-color: #f7f5ff42;
     padding: 0.5em;
@@ -137,4 +125,43 @@ header, .target {
     height: 40vh;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.equipe {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2em;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F3BD;
+    color: #05668D;
+    gap: 2%;
+}
+
+.team-card-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1em;
+    justify-content: center;
+}
+
+.team-card {
+    grid-column: span 4;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    grid-column: span 4;
+}
+
+.team-card h4 {
+    width: 100px;
 }
