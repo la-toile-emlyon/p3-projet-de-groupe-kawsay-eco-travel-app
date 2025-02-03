@@ -15,7 +15,7 @@ header, .fonctionnalites {
     background: url(assets/header-bg.png) lightgray 50% / cover no-repeat;
 } */
 
-.header-text,  {
+.header-text{
     display: flex;
     flex-direction: column;
     gap: 1em;
