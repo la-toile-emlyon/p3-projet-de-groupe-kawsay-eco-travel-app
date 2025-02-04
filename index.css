@@ -1,5 +1,5 @@
-    /* header */
-header, .fonctionnalites {
+/* header */
+.fonctionnalites {
     display: flex;
     flex-direction: column;
     padding: 0 4em;
@@ -11,19 +11,50 @@ header, .fonctionnalites {
     color: #FAF3DD;
 }
 
-/* header {
-    background: url(assets/header-bg.png) lightgray 50% / cover no-repeat;
-} */
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4em;
+    min-height: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: url(assets/travel-globe-1.mp4) cover no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: -1; /* Ensure the video is behind other content */
+}
 
 .header-text{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    align-items: center;
 }
 
 .header-text h1 {
     font-family: var(--secondary-font);
+    margin: 0;
+    padding: 0;
+}
+
+.header-text h3 {
+    text-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+.main-fonctionnalite img {
+    width: 50%;
 }
 
 #Site-title {
@@ -78,11 +109,11 @@ header, .fonctionnalites {
     padding: 0.5em;
     margin: 0;
     text-align: center;
+    color: var(--tertiary-color);
 }
 
 .chiffres-card h6 {
-    font-size: 0.5em;
-    padding: 1em;
+    font-size: 1em;
     text-align: end ;
 }
 
@@ -115,12 +146,13 @@ header, .fonctionnalites {
     justify-content: center;
 }
 .card-impact{
-    grid-column: span 2;
+    grid-column: span 5;
+    display: flex;
+    align-items: center;
 }
 
 .card-impact img {
-    width: 192px;
-    height: 192px;
+    height: 70%;
     object-fit: cover;
 }
 
@@ -146,16 +178,15 @@ header, .fonctionnalites {
 .review-card {
     display: flex;
     flex-direction: row;
-    width: 50%;
-    border-radius: 3%;
+    width: 70%;
+    border-radius: 0.8em;
     background-color: #f7f5fff6;
-    padding: 0.5em;
 }
 
 .review-card img {
     width: 200px;
     height: auto;
-    border-radius: 5%;
+    border-radius: 1em;
     object-fit: cover;
 }
 
@@ -163,4 +194,9 @@ header, .fonctionnalites {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+}
+
+.review-text h3 h4 p {
+    margin: 0;
+    padding: 0;
 }
