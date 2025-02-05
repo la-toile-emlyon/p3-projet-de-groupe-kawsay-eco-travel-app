@@ -125,6 +125,22 @@ header {
     text-align: end ;
 }
 
+/* .bg-number {
+    background-image: url('assets/chiffre-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+} */
+
+/* .chiffres-card img {
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    height: auto;
+    object-fit: contain;
+} */
+
 .impact, .download {
     display: flex;
     flex-direction: column;
@@ -143,6 +159,25 @@ header {
     align-items: center;
 }
 
+#n1 {
+    color: #E4435F;
+    font-weight: 700;
+}
+
+#n2 {
+    color: #00A0E0;
+    font-weight: 700;
+}
+
+#n3 {
+    color: #F58C29;
+    font-weight: 700;
+}
+
+#n4 {
+    font-weight: 700;
+}
+
 .reverse {
     flex-direction: row-reverse;
 }
@@ -152,9 +187,10 @@ header {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1em;
     justify-content: center;
+    width: 100%;
 }
 .card-impact{
-    grid-column: span 2;
+    grid-column: span 4;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -164,6 +200,10 @@ header {
     width: 150px;
     height: 70%;
     object-fit: contain;
+}
+
+.down {
+    grid-column: span 6;
 }
 
 .reviews {
