@@ -53,6 +53,14 @@ header {
     padding: 0;
 }
 
+.stores-header {
+    display: flex;
+}
+
+.dwnld {
+    width: 50%;
+}
+
 .main-fonctionnalite img {
     width: 50%;
     max-height: 100vh;
@@ -146,15 +154,16 @@ header {
     justify-content: center;
 }
 .card-impact{
-    grid-column: span 4;
+    grid-column: span 2;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .card-impact img {
     width: 150px;
     height: 70%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .reviews {
